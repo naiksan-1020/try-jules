@@ -30,8 +30,8 @@ void main() {
       await tester.pumpAndSettle(); // Ensure LoginScreen is fully rendered
 
       expect(find.byType(LoginScreen), findsOneWidget);
-      expect(find.widgetWithText(TextField, 'Email'), findsOneWidget);
-      expect(find.widgetWithText(TextField, 'Password'), findsOneWidget);
+      expect(find.bySemanticsLabel('Email'), findsOneWidget);
+      expect(find.bySemanticsLabel('Password'), findsOneWidget);
       expect(find.widgetWithText(ElevatedButton, 'Login'), findsOneWidget);
     });
 
