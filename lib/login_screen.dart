@@ -17,7 +17,7 @@ class LoginController extends GetxController {
     // Implement login logic here
     // For now, just print the email and password
     print('Email: ${emailController.text}');
-    print('Password: ${passwordController.text}');
+    print('Password: ******'); // Masked password for security
 
     // Navigate to home screen on successful login
     Get.offAllNamed(AppRoutes.home); // Navigate using AppRoutes.home
