@@ -23,7 +23,7 @@ class HomeScreen extends GetView<HomeController> {
             ),
             const SizedBox(height: 20),
             Obx(() => Text(
-                  'Button pressed: ${controller.count} times',
+                  'Button pressed: ${controller.count.value} times',
                   style: const TextStyle(fontSize: 16),
                 )),
             const SizedBox(height: 20),
